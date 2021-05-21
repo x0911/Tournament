@@ -1,0 +1,30 @@
+.theme--light {
+  .v-card {
+    .v-card__title,
+    .v-card__text,
+    .v-card__subtitle {
+      color: rgba(0, 0, 0, 0.87);
+    }
+  }
+}
+.v-card {
+  .v-card__title {
+    word-break: initial !important;
+  }
+  &.flexed {
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    .v-card__text {
+      flex: 1 1 auto;
+    }
+  }
+}
+
+.v-application--is-rtl {
+  .v-card {
+    .v-card__text {
+      line-height: 1.5rem;
+    }
+  }
+}

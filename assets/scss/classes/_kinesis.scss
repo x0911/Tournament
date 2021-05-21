@@ -1,0 +1,51 @@
+.random-icon-position {
+  position: fixed;
+  &.v-1 {
+    top: 7%;
+    left: 1%;
+  }
+  &.v-2 {
+    top: 61%;
+    left: 7%;
+  }
+  &.v-3 {
+    top: 15%;
+    left: 35%;
+  }
+  &.v-4 {
+    bottom: 7%;
+    right: 1%;
+  }
+  &.v-5 {
+    bottom: 61%;
+    right: 15%;
+  }
+  &.v-6 {
+    bottom: 15%;
+    right: 35%;
+  }
+  &.v-7 {
+    top: 26%;
+    left: 21%;
+  }
+  &.v-8 {
+    top: 81%;
+    left: 25%;
+  }
+  &.v-9 {
+    bottom: 81%;
+    right: 35%;
+  }
+  &.v-10 {
+    bottom: 87%;
+    right: 7%;
+  }
+  &.v-11 {
+    bottom: 26%;
+    right: 15%;
+  }
+  &.v-6 {
+    bottom: 15%;
+    right: 35%;
+  }
+}

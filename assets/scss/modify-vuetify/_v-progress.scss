@@ -1,0 +1,35 @@
+.v-progress-circular {
+  @each $color in $mainColors {
+    &.#{$color}--text {
+      .v-progress-circular__underlay {
+        $bgColor: rgba(var(--v-#{$color}-rgb), 0.1);
+        stroke: $bgColor !important;
+      }
+    }
+  }
+  // Hide half of the circle
+  &.hide-progress-circular-half {
+    position: relative;
+    .v-progress-circular__info {
+      z-index: 1;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 50%;
+    }
+    &.theme--light {
+      &::after {
+        background: white;
+      }
+    }
+    &.theme--dark {
+      &::after {
+        background: #1e1e1e;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.v-expansion-panels {
+  &.no-space-x {
+    & > .v-expansion-panel {
+      // .v-expansion-panel-header {
+
+      // }
+      & > .v-expansion-panel-content {
+        & > .v-expansion-panel-content__wrap {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+}

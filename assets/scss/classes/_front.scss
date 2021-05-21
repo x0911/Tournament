@@ -1,0 +1,36 @@
+@for $i from 1 through 20 {
+  .max-w-#{$i}rem {
+    max-width: #{$i}rem;
+  }
+  .w-#{$i}0 {
+    width: percentage($i / 10);
+  }
+  .min-w-#{$i}0 {
+    min-width: percentage($i / 10);
+  }
+  .max-h-#{$i}rem {
+    max-height: #{$i}rem;
+  }
+  .h-#{$i}0 {
+    height: percentage($i / 10);
+  }
+  .min-h-#{$i}0 {
+    min-height: percentage($i / 10);
+  }
+}
+
+// Heiglghting Texts
+[class*='text-highlight-'] {
+  background: left 1em/1em 0.2em;
+}
+@each $color in $mainColors {
+  .text-highlight-#{$color} {
+    $highlightColor: rgba(var(--v-#{$color}-rgb), 0.5);
+    background-image: linear-gradient(
+      to bottom,
+      $highlightColor 0,
+      $highlightColor 100%
+    );
+    background-repeat: repeat-x;
+  }
+}

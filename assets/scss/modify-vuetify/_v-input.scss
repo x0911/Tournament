@@ -1,0 +1,114 @@
+.v-application--is-ltr {
+  .v-text-field {
+    .v-input__prepend-inner {
+      padding-right: 8px !important;
+    }
+  }
+}
+
+.v-application--is-rtl {
+  .v-text-field {
+    .v-input__prepend-inner {
+      padding-left: 8px !important;
+    }
+    &.inner-prefix {
+      .v-text-field__slot {
+        margin-left: auto;
+        margin-right: 60px;
+      }
+    }
+  }
+}
+
+.v-text-field {
+  &.text-center {
+    label.v-label {
+      right: 50% !important;
+      left: auto !important;
+      transform: translate(-50%, 0);
+    }
+  }
+  &.range {
+    .v-input__slot {
+      padding-right: 3px !important;
+    }
+    .v-input__append-inner {
+      margin-top: 2px !important;
+      height: 51px;
+      .v-btn {
+        height: 100%;
+        &:nth-of-type(2) {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          // border-radius: 0;
+        }
+        &:nth-of-type(1) {
+          // border-radius: 50px;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+      }
+    }
+  }
+  &.v-input--dense {
+    &.range {
+      .v-input__append-inner {
+        height: 39px;
+      }
+    }
+  }
+  @each $color in $mainColors {
+    &.border-#{$color} {
+      fieldset {
+        border-color: var(--v-#{$color}-base);
+      }
+    }
+    @each $variant in $variants {
+      @for $i from 1 through 5 {
+        &.border-#{$color}-#{$variant}-#{$i} {
+          fieldset {
+            border-color: var(--v-#{$color}-#{$variant}#{$i});
+          }
+        }
+      }
+    }
+  }
+  @for $i from 1 to 10 {
+    &.input-ls-#{$i} {
+      input {
+        letter-spacing: #{$i}px;
+      }
+    }
+  }
+  &.inner-prefix {
+    .v-text-field__slot {
+      margin-left: 60px;
+    }
+    .v-input__prepend-inner {
+      margin-top: 0 !important;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 60px;
+      height: 100%;
+      margin: 0 !important;
+      padding: 0 !important;
+      > div {
+        display: flex;
+        flex: 1 1 auto;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        // align-content: center;
+      }
+    }
+  }
+  .v-text-field__details {
+    padding-top: 2px !important;
+    .v-messages__message {
+      line-height: 1.5em;
+    }
+  }
+}

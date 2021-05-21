@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Cairo';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200;
+  src: local('Cairo'), local('Cairo-Regular'),
+    url('../fonts/Cairo/cairo-arabic-400.woff2') format('woff2'),
+    url('../fonts/Cairo/cairo-arabic-400.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Cairo';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: local('Cairo SimiBold'), local('Cairo-SimiBold'),
+    url('../fonts/Cairo/cairo-arabic-600.woff2') format('woff2'),
+    url('../fonts/Cairo/cairo-arabic-600.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Cairo';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('Cairo Bold'), local('Cairo-Bold'),
+    url('../fonts/Cairo/cairo-arabic-700.woff2') format('woff2'),
+    url('../fonts/Cairo/cairo-arabic-700.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Cairo';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: local('Cairo Black'), local('Cairo-Black'),
+    url('../fonts/Cairo/cairo-arabic-900.woff2') format('woff2'),
+    url('../fonts/Cairo/cairo-arabic-900.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Cairo';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: local('Cairo Black'), local('Cairo-Black'),
+    url('../fonts/Cairo/cairo-arabic-900.woff2') format('woff2'),
+    url('../fonts/Cairo/cairo-arabic-900.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Cairo';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 900;
+  src: local('Cairo Black'), local('Cairo-Black'),
+    url('../fonts/Cairo/cairo-arabic-900.woff2') format('woff2'),
+    url('../fonts/Cairo/cairo-arabic-900.woff') format('woff');
+}

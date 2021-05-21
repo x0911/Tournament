@@ -1,0 +1,27 @@
+@for $i from 1 through 9 {
+  .transition-all-#{$i}-linear {
+    transition: all #{$i / 10}s linear !important;
+  }
+}
+
+.translate-on-hover {
+  transition: transform 0.2s ease-in-out !important;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.scale-img-on-hover {
+  .v-image.scaled {
+    .v-image__image {
+      transition: transform 0.2s ease-in-out !important;
+    }
+  }
+  &:hover {
+    .v-image.scaled {
+      .v-image__image {
+        transform: scale(1.05);
+      }
+    }
+  }
+}

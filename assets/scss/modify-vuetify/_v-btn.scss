@@ -1,0 +1,21 @@
+.v-btn {
+  text-transform: none !important;
+  &.no-active {
+    &::before {
+      background-color: transparent;
+    }
+  }
+  @each $color in $mainColors {
+    &.#{$color}--text {
+      $bgColor: rgba(var(--v-#{$color}-rgb), 0.1);
+      background-color: $bgColor !important;
+      &.raised {
+        &:hover {
+          transform: translateY(-3px);
+          color: white !important;
+          background-color: var(--v-#{$color}-base) !important;
+        }
+      }
+    }
+  }
+}

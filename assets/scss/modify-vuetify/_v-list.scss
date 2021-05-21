@@ -1,0 +1,44 @@
+.v-application--is-rtl {
+  .v-list-item {
+    .v-list-item__content {
+      // & > *:not(:last-child) {
+      //   margin-bottom: 0px;
+      // }
+      .v-list-item__title,
+      .v-list-item__subtitle {
+        line-height: 1.375rem;
+      }
+    }
+  }
+}
+.v-list-item {
+  &.no-active {
+    &::before {
+      background-color: transparent;
+    }
+  }
+  &.wrap {
+    .v-list-item__content {
+      .v-list-item__title:not(.no-wrap),
+      .v-list-item__subtitle:not(.no-wrap) {
+        white-space: initial !important;
+      }
+    }
+  }
+  .v-list-item__content {
+    .v-list-item__title {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.v-list-group {
+  &.dense-append-icon {
+    .v-list-group__header {
+      .v-list-group__header__append-icon {
+        margin: auto !important;
+        min-width: 16px !important;
+      }
+    }
+  }
+}

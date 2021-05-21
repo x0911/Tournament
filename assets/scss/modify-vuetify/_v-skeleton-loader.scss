@@ -1,0 +1,7 @@
+.v-skeleton-loader {
+  &.transparent {
+    & > .v-skeleton-loader__bone {
+      background-color: transparent !important;
+    }
+  }
+}

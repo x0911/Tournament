@@ -1,0 +1,7 @@
+.v-application--is-rtl {
+  .v-icon {
+    &.rtl-flip {
+      transform: rotateY(180deg);
+    }
+  }
+}

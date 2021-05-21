@@ -1,0 +1,14 @@
+.swal2-container {
+  // Customizing SweetAlert2
+  .swal2-modal {
+    .swal2-actions {
+      button {
+        padding: 0.825em 1.4em;
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

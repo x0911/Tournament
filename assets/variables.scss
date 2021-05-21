@@ -1,0 +1,15 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+$btn-letter-spacing: 0;
+$material-light: (
+  // 'background': #f7faff,
+  // 'cards': #f0f,
+);
+$shadow-key-ambient-opacity: rgb(140 152 164 / 2.5%);
+$shadow-key-penumbra-opacity: rgb(140 152 164 / 10%); // Keep this only
+$shadow-key-umbra-opacity: rgb(140 152 164 / 0%);
+// 0 12px 15px rgb(140 152 164 / 10%)
+
+@import '~vuetify/src/styles/styles.sass';

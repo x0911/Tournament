@@ -1,0 +1,32 @@
+$aligns: (
+  'start': (
+    'rtl': right,
+    'ltr': left,
+  ),
+  'end': (
+    'rtl': left,
+    'ltr': right,
+  ),
+);
+$dirs: 'rtl', 'ltr';
+$breakpoints: (
+  'xs': 0,
+  'sm': 600px,
+  'md': 960px,
+  'lg': 1280px - 16px,
+  'xl': 1920px - 16px,
+);
+
+@each $dir in $dirs {
+  .v-application.v-application--is-#{$dir} {
+    @each $bp, $width in $breakpoints {
+      @media only screen and (min-width: $width) {
+        @each $key, $vals in $aligns {
+          .text-#{$bp}-#{$key} {
+            text-align: map-get($vals, $dir) !important;
+          }
+        }
+      }
+    }
+  }
+}

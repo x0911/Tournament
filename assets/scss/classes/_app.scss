@@ -1,0 +1,32 @@
+.user-select-none {
+  user-select: none;
+}
+
+.flex-initial {
+  flex: initial !important;
+}
+
+@for $i from 1 to 15 {
+  .ls-#{$i} {
+    letter-spacing: #{$i}px !important;
+  }
+  $fs: $i + 10;
+  .fs-#{$i} {
+    font-size: #{$fs}px !important;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.v-responsive.v-image {
+  .v-image__image {
+    transition: 0.6s;
+  }
+  &.zoom-on-hover {
+    .v-image__image {
+      transform: scale(1.03);
+    }
+  }
+}

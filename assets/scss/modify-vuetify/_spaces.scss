@@ -1,0 +1,7 @@
+.v-application {
+  &.v-application--is-rtl {
+    * {
+      letter-spacing: initial !important;
+    }
+  }
+}

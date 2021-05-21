@@ -1,0 +1,6 @@
+$positions: relative, absolute, fixed, static, sticky;
+@each $position in $positions {
+  .p-#{$position} {
+    position: $position !important;
+  }
+}

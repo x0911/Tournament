@@ -1,0 +1,23 @@
+.v-navigation-drawer {
+  &.main-sidenav {
+    .v-list-group {
+      .v-list-group__header {
+        min-height: 65px;
+      }
+      .v-list-group__items {
+        transition: all 1s linear;
+      }
+      &.v-list-group--active {
+        &.v-list-group--active,
+        .v-list-group__items {
+          background: rgba(1, 11, 20, 0.5);
+          // background: linear-gradient(
+          //   0deg,
+          //   rgba(255, 0, 0, 0.15),
+          //   rgba(255, 0, 0, 0.03)
+          // );
+        }
+      }
+    }
+  }
+}
